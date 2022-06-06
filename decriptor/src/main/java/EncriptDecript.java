@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class EncriptDecript {
 
@@ -10,6 +11,12 @@ public class EncriptDecript {
             'ъ', 'ы', 'ь', 'э', 'я', '.', ',', '«', '»', '"', '\'', ':', '!', '?', ' '};
 
     private static HashMap<Character, Integer> charInt = new HashMap<>();
+
+    private void newHashMap() {
+        for (int i = 0; i < ALPHABET.length; i++) {
+            charInt.put(ALPHABET[i], 0);
+        }
+    }
 
 
     private int takeIndex(char c) {
@@ -33,7 +40,7 @@ public class EncriptDecript {
             }
 
         }
-        private char newCharDecript ( char c, int step){
+        private char newCharDecript (char c, int step){
         int outputIndex = takeIndex(c) - step;
 
         if (outputIndex >= 0) {
@@ -78,6 +85,8 @@ public class EncriptDecript {
 
             return newString;
         }
+
+
         
 
 

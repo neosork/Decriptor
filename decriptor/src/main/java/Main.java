@@ -1,14 +1,20 @@
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class Main {
-    public static void main(String[] args) {
-       // System.out.println("hello world");
-
-        String s = "носок";
-
-        EncriptDecript ed = new EncriptDecript();
-
-        String rotate = ed.encriptorString(s, 20);
+    public static void main(String[] args) throws IOException {
+        // System.out.println("hello world");
 
 
-        System.out.println(rotate);
+        boolean validate = false;
+        //1) Брут форс
+
+        while(!validate){
+            for (int i = 0; i < ALPHABET.length; i++) {
+
+            }
+        }
+
+
     }
 }
